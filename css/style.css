@@ -246,15 +246,13 @@ figcaption {
     display: grid;
     gap: var(--gap);
     grid-auto-flow: column;
-    grid-auto-columns: auto;
+    grid-auto-columns: 55%;
     padding: 0 var(--gap) var(--gap) var(--gap);
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 
 }
-video{
-    max-width: 100%;
-}
+
 #projects h3 {
     padding: var(--gap) 0;
 }
@@ -268,6 +266,43 @@ footer {
 
 }
 
+#contacts-holder{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    height: 12vh;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    grid-auto-rows: 4rem;
+    grid-template-columns:55% ;
+}
+
+.quick-contact{
+    border: 2px solid rgb(255, 239, 186);
+    border-radius: 45px;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+.quick-contact-2{
+    border: 2px solid rgb(255, 239, 186);
+    border-radius: 45px;
+}
+
+.quick-contact-2 a{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 150%;
+}
+.quick-contact-2:hover{
+    border-radius: 8px solid rgb(47, 59, 73);
+}
+
+.quick-contact-2 a:hover{
+    color: goldenrod;
+}
 @media(max-width:768px) {
 
     /*header for mobile*/
@@ -343,4 +378,11 @@ footer {
         height: 80%;
     }
 
+    video {
+        max-width: 100%;
+    }
+
+.projects-holder-video{
+
+}
 }
