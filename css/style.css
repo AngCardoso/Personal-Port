@@ -136,6 +136,7 @@ header a:hover {
     grid-template-columns: 40% 40%;
     justify-content: space-evenly;
     align-items: center;
+    
 
 }
 
@@ -148,6 +149,8 @@ header a:hover {
 }
 
 figcaption {
+    position: relative;
+    left: 15%;
     width: 70%;
     text-align: center;
 }
@@ -304,7 +307,11 @@ footer {
     color: goldenrod;
 }
 @media(max-width:768px) {
-
+    body{
+        display: flex;
+        flex-direction: column;
+        gap: var(--_mobile-spacer);
+    }
     /*header for mobile*/
     body{
         --_mobile-spacer: 1.5rem;
@@ -368,7 +375,7 @@ footer {
 
     /*header for mobile end*/
 
-    #home, #about-me{
+    #home, #about-me, .work-area{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -377,12 +384,17 @@ footer {
     #home{
         height: 80%;
     }
-
+    .work-area{
+        justify-content: space-between;
+    }
     video {
         max-width: 100%;
     }
+    .projects-holder{
+     grid-auto-columns: 65%;   
+    }
+    .projects-holder-video{
+    grid-auto-columns: 80%;
+    }
 
-.projects-holder-video{
-
-}
 }
