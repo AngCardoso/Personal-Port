@@ -249,23 +249,33 @@ figcaption {
     display: grid;
     gap: var(--gap);
     grid-auto-flow: column;
-    grid-auto-columns: 55%;
+    grid-auto-columns: 37%;
     padding: 0 var(--gap) var(--gap) var(--gap);
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 
 }
+.project-item:hover, .project-item-video:hover{
+    border: 0.2px solid goldenrod;
+    filter: saturate(145%);
+    
+}
+
 
 #projects h3 {
     padding: var(--gap) 0;
 }
 
 footer {
+    bottom: 0;
     background-color: black;
     color: white;
-    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1rem;
+    height: 45px;
 
 }
 
@@ -305,6 +315,9 @@ footer {
 
 .quick-contact-2 a:hover{
     color: goldenrod;
+}
+video {
+    max-width: 100%;
 }
 @media(max-width:768px) {
     body{
@@ -387,9 +400,7 @@ footer {
     .work-area{
         justify-content: space-between;
     }
-    video {
-        max-width: 100%;
-    }
+
     .projects-holder{
      grid-auto-columns: 65%;   
     }
